@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body , html {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+p {
+    color: #6d6d81;
+}
+.main {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+}
+.navMain {
+    height: 70px;
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.btns button {
+    border: none;
+    margin-left:10px;
+}
+.btns button:nth-child(1) {
+    width: 13vw;
+    color: #fff;
+    background-color: transparent;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Enter-marcket {
+    width: 13vw;
+    color: #fff;
+    background: linear-gradient(to right , #E72597, #B475E9);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+.page-1 {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #414141;
+}
+.page1-left h1 {
+    font-size: 8vh;
+    line-height: 8vh;
+}
+.navbar {
+    position: relative;
+}
+.page1-left p {
+    line-height: 3.8vh;
+    font-size: 3.2vh;
+    font-weight: 600;
+}
+.Enter-marcket2 {
+    width: 25vh;
+    height: 9vh;
+    color: #fff;
+    background: linear-gradient(to right , #E72597, #B475E9);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    border: none;
+    margin-top: 40px;
+}
+#menu {
+   position: absolute;
+   right: -80%;
+   bottom: 20%;
+   font-size: 30px;
+   display: none;
+}
+.toggleBar {
+    display: none;
+    border: 1px solid #E72597;
+    padding-bottom: 4vh;
+    box-shadow: 0px 0px 20px #555555;
+}
+.page-2 {
+    background-color: #000;
+    min-height: 100vh;
+}
+.page-2 .imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.page-2 img {
+    height: 40px;
+}
+.page-2 h1 {
+    font-size: 9vh;
+    margin: 0px 40px;
+}
+.page-2card .col-12 img {
+    height: 250px;
+}
+.page-3 {
+    min-height: 100vh;
+    padding-top: 25vh;
+}
+.page-3 h1 {
+    font-size: 9vh;
+}
+.page-4 {
+    min-height: 120vh;
+}
+.page-4 .drop1 {
+    position: relative;
+}
+.page4-row .col-12 h1 {
+    font-size: 9vh;
+    line-height: 9vh;
+}
+.page4-row .col-12 p {
+    font-size: 3vh;
+}
+.dropmenubtn1 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.dropbox h1 {
+    color: #6d6d81;
+}
+.dropbox {
+    height: 53px;
+    overflow: hidden;
+    margin: 10px;
+    transition: 0.3s;
+}
+.dropmenubtn2 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.dropmenubtn3 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer {
+    background: linear-gradient(to right , #E72597, #B475E9);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+   padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query start from here  */
+@media (max-width:600px) {
+    .page1-left h1 {
+        font-size: 6vh;
+        line-height: 6vh;
+    }
+    .page1-left p {
+        font-size: 2.8vh;
+    }
+    #menu {
+        display: flex;
+    }
+    .toggleBar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        top: -100%;
+        background-color: black;
+    }
+    .Enter-marcket3{
+        color: #fff;
+        background: linear-gradient(to right , #E72597, #B475E9);
+        border: none;
+        border-radius: 10px;
+    }
+    .joincommu {
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .page-2 .imgs {
+        justify-content: center;
+        gap: 3vh;
+        padding-top: 5vh;
+        height: 20%;
+    }
+    .page-2 .imgs img {
+        height: 35px;
+        background-color: #7e7e7e;
+        padding: 30px 80px;
+        border-radius: 15px;
+    }
+    .page-2card .col-12 img {
+        border-radius: 15px;
+    } 
+    .page-2card .col-12 img {
+        height: 300px;
+        width:100%;
+        object-fit: cover;
+    }
+    .page-2 h1 {
+        font-size: 7vh;
+    }
+    .page-3  {
+        padding-top: 10vh;
+    }
+    .page-3 h1 {
+        font-size: 7vh;
+       
+    }
+    .page-3 h1 br {
+        display: none;
+    }
+    .page-3 p br{
+        display: none;
+    }
+    .page4-row .col-12 h1 {
+        font-size: 7vh;
+        line-height: 9vh;
+    }
+    .page-4 {
+        min-height: 85vh;
+    }
+}
